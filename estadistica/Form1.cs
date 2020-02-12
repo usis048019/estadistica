@@ -16,5 +16,10 @@ namespace estadistica
         {
             InitializeComponent();
         }
+
+        private void btbmediaaritmetica_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
