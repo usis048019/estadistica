@@ -18,3 +18,32 @@ namespace estadistica
        return suma / serie.Length ;
    
 }
+        public double estandar(string[] serie)
+            {
+            double media_aritmetica = media(serie),
+                suma = 0,
+                estandar = 0;
+            foreach(String valor in serie ){
+                suma += Math.Pow(double.Parse(valor) - media_aritmetica, 2);
+        }
+            return suma / serie.Length;
+        }
+            public double tipica(string[]serie)
+        { 
+            return Math.Sqrt(estandar(serie));
+        }
+
+        }
+
+        }
+    
+
+
+
+
+
+
+
+
+}
+}
